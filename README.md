@@ -10,21 +10,27 @@ member Y to a switch room. In the switch room are two switches labeled “A” a
 positions are. When the crew member is in the switch room, he must select one, and only one, of the
 switches and reverse it’s position. After he has done that, he will be led back to his cell and no one else
 will visit the switch room until the warden selects the next crew member.
+
+
 If a crew member correctly tells the pirate warden that all crew members have visited the switch room
 at least once, all crew members will be set free. If they are incorrect, all of the crew will be fed to the
 alligators.
+
+
 The ship’s crew has one chance to devise a strategy to win this game before they are taken to the
 isolated cells.
+
 Algorithm
-Appoint one crew to be special; call her the ‘tallykeeper’.
-Then each crew should have the following
-behavior:
+
+Appoint one crew to be special; call her the ‘tallykeeper’. Then each crew should have the following behavior:
+
 Nontallykeeper
 First, the crew needs to keep a ‘personal count’. The count should start at zero. When they are called to
 the switch room, their action will depend on their count and the position of the switches. If their count is
 zero or one and the left switch is down, then they should switch the left switch and increment their
 count. In all other cases, they should switch the right switch. They should never announce that they think
 all crew have visited the switch room.
+
 Tallykeeper
 The tallykeeper
 should also keep a ‘personal count’. This count should also start at zero. When the
